@@ -11564,6 +11564,7 @@ Audio, scart, microphone, headphone&lt;p&gt;
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="X1" library="con-hirschmann" deviceset="TOBU3" device="" value="TV OUT"/>
 <part name="X2" library="adafruit" deviceset="STEREOJACK" device="" value="TAPE IN / OUT"/>
+<part name="C5" library="adafruit" deviceset="CPOL-US" device="E5-8.5" value="10uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -11592,7 +11593,7 @@ Audio, scart, microphone, headphone&lt;p&gt;
 <instance part="R4" gate="G$1" x="129.54" y="149.86"/>
 <instance part="R5" gate="G$1" x="129.54" y="142.24"/>
 <instance part="R6" gate="G$1" x="129.54" y="134.62"/>
-<instance part="GND5" gate="1" x="60.96" y="157.48"/>
+<instance part="GND5" gate="1" x="60.96" y="162.56"/>
 <instance part="C2" gate="G$1" x="43.18" y="149.86" rot="R270"/>
 <instance part="GND7" gate="1" x="93.98" y="147.32"/>
 <instance part="T1" gate="G1" x="165.1" y="124.46"/>
@@ -11605,6 +11606,7 @@ Audio, scart, microphone, headphone&lt;p&gt;
 <instance part="GND8" gate="1" x="182.88" y="101.6"/>
 <instance part="X1" gate="B" x="81.28" y="160.02"/>
 <instance part="X2" gate="1" x="17.78" y="152.4" rot="R180"/>
+<instance part="C5" gate="G$1" x="43.18" y="160.02" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -11670,7 +11672,8 @@ Audio, scart, microphone, headphone&lt;p&gt;
 <segment>
 <pinref part="X2" gate="1" pin="1"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="30.48" y1="160.02" x2="60.96" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="160.02" x2="30.48" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="165.1" x2="60.96" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -11848,11 +11851,9 @@ Audio, scart, microphone, headphone&lt;p&gt;
 <label x="38.1" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="40.64" y1="154.94" x2="55.88" y2="154.94" width="0.1524" layer="91"/>
-<label x="48.26" y="154.94" size="1.778" layer="95"/>
-<pinref part="X2" gate="1" pin="2"/>
-<wire x1="30.48" y1="157.48" x2="40.64" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="157.48" x2="40.64" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="160.02" x2="55.88" y2="160.02" width="0.1524" layer="91"/>
+<label x="48.26" y="160.02" size="1.778" layer="95"/>
+<pinref part="C5" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="GREEN" class="0">
@@ -11939,6 +11940,14 @@ Audio, scart, microphone, headphone&lt;p&gt;
 <pinref part="X2" gate="1" pin="5"/>
 <pinref part="C2" gate="G$1" pin="-"/>
 <wire x1="30.48" y1="149.86" x2="38.1" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="X2" gate="1" pin="2"/>
+<pinref part="C5" gate="G$1" pin="-"/>
+<wire x1="30.48" y1="157.48" x2="38.1" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="157.48" x2="38.1" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
