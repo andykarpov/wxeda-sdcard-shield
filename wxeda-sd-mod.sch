@@ -9329,7 +9329,7 @@ Audio, scart, microphone, headphone&lt;p&gt;
 <sheet>
 <plain>
 <text x="152.4" y="7.62" size="2.1844" layer="94">Andy Karpov &lt;andy.karpov@gmail.com&gt;</text>
-<text x="238.76" y="7.62" size="2.1844" layer="94">1.1</text>
+<text x="236.22" y="7.62" size="1.778" layer="94">1.0 RCA</text>
 </plain>
 <instances>
 <instance part="JP1" gate="A" x="58.42" y="106.68" rot="R180"/>
