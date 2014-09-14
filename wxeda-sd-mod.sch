@@ -6991,13 +6991,13 @@ Insulation resistance 100 MΩ&lt;br&gt;</description>
 <part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="AXIAL-0.3" value="10k"/>
 <part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="AXIAL-0.3" value="10k"/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C2" library="adafruit" deviceset="CPOL-US" device="E5-8.5" value="10uF"/>
+<part name="C2" library="adafruit" deviceset="CPOL-US" device="E2-5" value="10uF"/>
 <part name="R9" library="SparkFun-Passives" deviceset="RESISTOR" device="AXIAL-0.3" value="75"/>
-<part name="C4" library="adafruit" deviceset="CPOL-US" device="E5-8.5" value="47uF"/>
+<part name="C4" library="adafruit" deviceset="CPOL-US" device="E2-5" value="47uF"/>
 <part name="X2" library="adafruit" deviceset="STEREOJACK" device="" value="TAPE IN / OUT"/>
-<part name="C5" library="adafruit" deviceset="CPOL-US" device="E5-8.5" value="10uF"/>
+<part name="C5" library="adafruit" deviceset="CPOL-US" device="E2-5" value="10uF"/>
 <part name="R7" library="SparkFun-Passives" deviceset="RESISTOR" device="AXIAL-0.3" value="75"/>
-<part name="C3" library="adafruit" deviceset="CPOL-US" device="E5-8.5" value="47uF"/>
+<part name="C3" library="adafruit" deviceset="CPOL-US" device="E2-5" value="47uF"/>
 <part name="U$1" library="connectors-digital" deviceset="MINIDIN_4" device="" value="S-VIDEO"/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
