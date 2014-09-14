@@ -7000,6 +7000,10 @@ Insulation resistance 100 MΩ&lt;br&gt;</description>
 <part name="C3" library="adafruit" deviceset="CPOL-US" device="E2-5" value="47uF"/>
 <part name="U$1" library="connectors-digital" deviceset="MINIDIN_4" device="" value="S-VIDEO"/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="X1" library="adafruit" deviceset="STEREOJACK" device="" value="STEREO OUT"/>
+<part name="C6" library="adafruit" deviceset="CPOL-US" device="E2-5" value="10uF"/>
+<part name="C7" library="adafruit" deviceset="CPOL-US" device="E2-5" value="10uF"/>
+<part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7028,16 +7032,20 @@ Insulation resistance 100 MΩ&lt;br&gt;</description>
 <instance part="R4" gate="G$1" x="129.54" y="149.86"/>
 <instance part="R5" gate="G$1" x="129.54" y="142.24"/>
 <instance part="R6" gate="G$1" x="129.54" y="134.62"/>
-<instance part="GND5" gate="1" x="60.96" y="162.56"/>
-<instance part="C2" gate="G$1" x="43.18" y="149.86" rot="R270"/>
+<instance part="GND5" gate="1" x="78.74" y="167.64"/>
+<instance part="C2" gate="G$1" x="60.96" y="154.94" rot="R270"/>
 <instance part="R9" gate="G$1" x="190.5" y="157.48"/>
 <instance part="C4" gate="G$1" x="200.66" y="157.48" rot="R90"/>
-<instance part="X2" gate="1" x="17.78" y="152.4" rot="R180"/>
-<instance part="C5" gate="G$1" x="43.18" y="160.02" rot="R270"/>
+<instance part="X2" gate="1" x="35.56" y="157.48" rot="R180"/>
+<instance part="C5" gate="G$1" x="60.96" y="165.1" rot="R270"/>
 <instance part="R7" gate="G$1" x="190.5" y="139.7"/>
 <instance part="C3" gate="G$1" x="200.66" y="139.7" rot="R90"/>
-<instance part="U$1" gate="G$1" x="218.44" y="101.6"/>
-<instance part="GND6" gate="1" x="200.66" y="81.28"/>
+<instance part="U$1" gate="G$1" x="205.74" y="101.6"/>
+<instance part="GND6" gate="1" x="187.96" y="81.28"/>
+<instance part="X1" gate="1" x="35.56" y="134.62" rot="R180"/>
+<instance part="C6" gate="G$1" x="60.96" y="142.24" rot="R270"/>
+<instance part="C7" gate="G$1" x="60.96" y="132.08" rot="R270"/>
+<instance part="GND7" gate="1" x="78.74" y="144.78"/>
 </instances>
 <busses>
 </busses>
@@ -7090,30 +7098,36 @@ Insulation resistance 100 MΩ&lt;br&gt;</description>
 <segment>
 <pinref part="X2" gate="1" pin="1"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="30.48" y1="160.02" x2="30.48" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="165.1" x2="60.96" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="165.1" x2="48.26" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="170.18" x2="78.74" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="SHIELDING"/>
-<wire x1="203.2" y1="99.06" x2="200.66" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="99.06" x2="200.66" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="99.06" x2="187.96" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="99.06" x2="187.96" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="CASE1"/>
-<wire x1="200.66" y1="96.52" x2="200.66" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="93.98" x2="200.66" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="96.52" x2="200.66" y2="96.52" width="0.1524" layer="91"/>
-<junction x="200.66" y="96.52"/>
+<wire x1="187.96" y1="96.52" x2="187.96" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="93.98" x2="187.96" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="96.52" x2="187.96" y2="96.52" width="0.1524" layer="91"/>
+<junction x="187.96" y="96.52"/>
 <pinref part="U$1" gate="G$1" pin="CASE2"/>
-<wire x1="203.2" y1="93.98" x2="200.66" y2="93.98" width="0.1524" layer="91"/>
-<junction x="200.66" y="93.98"/>
+<wire x1="190.5" y1="93.98" x2="187.96" y2="93.98" width="0.1524" layer="91"/>
+<junction x="187.96" y="93.98"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="U$1" gate="G$1" pin="1"/>
-<wire x1="203.2" y1="111.76" x2="200.66" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="111.76" x2="200.66" y2="109.22" width="0.1524" layer="91"/>
-<junction x="200.66" y="99.06"/>
+<wire x1="190.5" y1="111.76" x2="187.96" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="111.76" x2="187.96" y2="109.22" width="0.1524" layer="91"/>
+<junction x="187.96" y="99.06"/>
 <pinref part="U$1" gate="G$1" pin="2"/>
-<wire x1="200.66" y1="109.22" x2="200.66" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="109.22" x2="200.66" y2="109.22" width="0.1524" layer="91"/>
-<junction x="200.66" y="109.22"/>
+<wire x1="187.96" y1="109.22" x2="187.96" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="109.22" x2="187.96" y2="109.22" width="0.1524" layer="91"/>
+<junction x="187.96" y="109.22"/>
+</segment>
+<segment>
+<pinref part="X1" gate="1" pin="1"/>
+<wire x1="48.26" y1="142.24" x2="48.26" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="48.26" y1="147.32" x2="78.74" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -7245,6 +7259,11 @@ Insulation resistance 100 MΩ&lt;br&gt;</description>
 <wire x1="30.48" y1="111.76" x2="48.26" y2="111.76" width="0.1524" layer="91"/>
 <label x="40.64" y="111.76" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="C7" gate="G$1" pin="+"/>
+<wire x1="63.5" y1="132.08" x2="73.66" y2="132.08" width="0.1524" layer="91"/>
+<label x="66.04" y="132.08" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="DSEN3" class="0">
 <segment>
@@ -7280,6 +7299,11 @@ Insulation resistance 100 MΩ&lt;br&gt;</description>
 <wire x1="30.48" y1="99.06" x2="48.26" y2="99.06" width="0.1524" layer="91"/>
 <label x="40.64" y="99.06" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="+"/>
+<wire x1="63.5" y1="142.24" x2="73.66" y2="142.24" width="0.1524" layer="91"/>
+<label x="66.04" y="142.24" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="A_IN" class="0">
 <segment>
@@ -7288,8 +7312,8 @@ Insulation resistance 100 MΩ&lt;br&gt;</description>
 <label x="38.1" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="45.72" y1="160.02" x2="55.88" y2="160.02" width="0.1524" layer="91"/>
-<label x="48.26" y="160.02" size="1.778" layer="95"/>
+<wire x1="63.5" y1="165.1" x2="73.66" y2="165.1" width="0.1524" layer="91"/>
+<label x="66.04" y="165.1" size="1.778" layer="95"/>
 <pinref part="C5" gate="G$1" pin="+"/>
 </segment>
 </net>
@@ -7301,8 +7325,8 @@ Insulation resistance 100 MΩ&lt;br&gt;</description>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="+"/>
-<wire x1="45.72" y1="149.86" x2="55.88" y2="149.86" width="0.1524" layer="91"/>
-<label x="48.26" y="149.86" size="1.778" layer="95"/>
+<wire x1="63.5" y1="154.94" x2="73.66" y2="154.94" width="0.1524" layer="91"/>
+<label x="66.04" y="154.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -7325,15 +7349,15 @@ Insulation resistance 100 MΩ&lt;br&gt;</description>
 <segment>
 <pinref part="X2" gate="1" pin="5"/>
 <pinref part="C2" gate="G$1" pin="-"/>
-<wire x1="30.48" y1="149.86" x2="38.1" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="154.94" x2="55.88" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="X2" gate="1" pin="2"/>
 <pinref part="C5" gate="G$1" pin="-"/>
-<wire x1="30.48" y1="157.48" x2="38.1" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="157.48" x2="38.1" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="162.56" x2="55.88" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="162.56" x2="55.88" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -7346,8 +7370,8 @@ Insulation resistance 100 MΩ&lt;br&gt;</description>
 <net name="Y_OUT" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="3"/>
-<wire x1="203.2" y1="106.68" x2="182.88" y2="106.68" width="0.1524" layer="91"/>
-<label x="182.88" y="106.68" size="1.778" layer="95"/>
+<wire x1="190.5" y1="106.68" x2="170.18" y2="106.68" width="0.1524" layer="91"/>
+<label x="170.18" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="-"/>
@@ -7365,13 +7389,28 @@ Insulation resistance 100 MΩ&lt;br&gt;</description>
 <net name="C_OUT" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="4"/>
-<wire x1="203.2" y1="104.14" x2="182.88" y2="104.14" width="0.1524" layer="91"/>
-<label x="182.88" y="104.14" size="1.778" layer="95"/>
+<wire x1="190.5" y1="104.14" x2="170.18" y2="104.14" width="0.1524" layer="91"/>
+<label x="170.18" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="-"/>
 <wire x1="205.74" y1="157.48" x2="218.44" y2="157.48" width="0.1524" layer="91"/>
 <label x="210.82" y="157.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="X1" gate="1" pin="2"/>
+<wire x1="48.26" y1="139.7" x2="55.88" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="-"/>
+<wire x1="55.88" y1="139.7" x2="55.88" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="X1" gate="1" pin="5"/>
+<pinref part="C7" gate="G$1" pin="-"/>
+<wire x1="48.26" y1="132.08" x2="55.88" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

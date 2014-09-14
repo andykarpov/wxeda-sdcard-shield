@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -125,7 +125,13 @@
 <wire x1="0" y1="40.63" x2="0" y2="0" width="0.254" layer="20"/>
 <dimension x1="0" y1="0" x2="0" y2="40.64" x3="-7.62" y3="20.32" textsize="1.778" layer="20"/>
 <dimension x1="0" y1="40.63" x2="101.6" y2="40.64" x3="50.79925" y3="48.255" textsize="1.778" layer="20"/>
-<text x="91.44" y="5.08" size="1.9304" layer="1" rot="SR0" align="center">SDCARDMOD</text>
+<text x="66.675" y="4.445" size="1.9304" layer="1" rot="SR0" align="center">SDCARDMOD</text>
+<text x="85.09" y="27.94" size="0.8128" layer="25">TAPE IN/OUT</text>
+<text x="60.325" y="28.575" size="0.8128" layer="25">S-VIDEO OUT</text>
+<text x="89.535" y="5.715" size="0.8128" layer="25">STEREO OUT</text>
+<text x="76.2" y="32.385" size="0.8128" layer="25">IRDA</text>
+<text x="98.425" y="29.845" size="0.8128" layer="25">ADC</text>
+<text x="38.735" y="33.655" size="0.8128" layer="25">7-SEGMENT CONNECTOR</text>
 </plain>
 <libraries>
 <library name="pinhead">
@@ -633,11 +639,11 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="JP1" library="pinhead" package="1X06" value="7SEG_LR" x="45.72" y="30.48" smashed="yes">
-<attribute name="NAME" x="39.2938" y="27.2288" size="0.8128" layer="25" ratio="10"/>
+<attribute name="NAME" x="38.0238" y="27.8638" size="0.8128" layer="25" ratio="10"/>
 </element>
 <element name="JP2" library="pinhead" package="1X03" value="IRDA" x="77.47" y="35.56" smashed="yes" rot="R180"/>
 <element name="U1" library="SparkFun-Connectors" package="SDCARD_4UCONN" value="SD_CARD" x="21.59" y="11.43" smashed="yes" rot="R90">
-<attribute name="VALUE" x="8.65" y="13.24" size="0.8128" layer="27" ratio="10"/>
+<attribute name="VALUE" x="8.65" y="12.605" size="0.8128" layer="27" ratio="10"/>
 </element>
 <element name="JP3" library="pinhead" package="1X06" value="7SEG_HR" x="45.72" y="38.1" smashed="yes"/>
 <element name="JP4" library="pinhead" package="1X03" value="ADC" x="99.06" y="35.56" smashed="yes" rot="R270"/>
@@ -645,41 +651,41 @@ design rules under a new name.</description>
 <element name="H1" library="LilyPad-Wearables" package="SIMPLE_HOLE" value="SEW_HOLE" x="2.54" y="38.1"/>
 <element name="H3" library="LilyPad-Wearables" package="SIMPLE_HOLE" value="SEW_HOLE" x="78.74" y="5.08"/>
 <element name="R1" library="SparkFun-Passives" package="AXIAL-0.3" value="0" x="44.45" y="5.08" smashed="yes" rot="R270">
-<attribute name="NAME" x="45.72" y="7.62" size="0.8128" layer="25" font="vector" rot="R270"/>
+<attribute name="NAME" x="46.99" y="7.62" size="0.8128" layer="25" font="vector" rot="R180"/>
 </element>
 <element name="R2" library="SparkFun-Passives" package="AXIAL-0.3" value="0" x="49.53" y="5.08" smashed="yes" rot="R270">
-<attribute name="NAME" x="50.8" y="7.62" size="0.8128" layer="25" font="vector" rot="R270"/>
+<attribute name="NAME" x="52.07" y="7.62" size="0.8128" layer="25" font="vector" rot="R180"/>
 </element>
 <element name="C1" library="SparkFun-Capacitors" package="1206" value="100n" x="20.32" y="6.35" smashed="yes" rot="R180">
-<attribute name="NAME" x="17.78" y="3.937" size="0.6096" layer="25"/>
+<attribute name="NAME" x="23.495" y="5.842" size="0.6096" layer="25"/>
 </element>
 <element name="R3" library="SparkFun-Passives" package="AXIAL-0.3" value="10k" x="55.88" y="19.05" smashed="yes" rot="R180">
-<attribute name="NAME" x="50.8" y="19.05" size="0.8128" layer="25" font="vector" rot="R180"/>
+<attribute name="NAME" x="50.8" y="19.685" size="0.8128" layer="25" font="vector" rot="R180"/>
 </element>
 <element name="R4" library="SparkFun-Passives" package="AXIAL-0.3" value="10k" x="50.8" y="13.97" smashed="yes" rot="R180">
-<attribute name="NAME" x="45.72" y="13.97" size="0.8128" layer="25" font="vector" rot="R180"/>
+<attribute name="NAME" x="45.72" y="14.605" size="0.8128" layer="25" font="vector" rot="R180"/>
 </element>
 <element name="R5" library="SparkFun-Passives" package="AXIAL-0.3" value="10k" x="53.34" y="16.51" smashed="yes" rot="R180">
-<attribute name="NAME" x="48.26" y="16.51" size="0.8128" layer="25" font="vector" rot="R180"/>
+<attribute name="NAME" x="48.26" y="17.145" size="0.8128" layer="25" font="vector" rot="R180"/>
 </element>
 <element name="R6" library="SparkFun-Passives" package="AXIAL-0.3" value="10k" x="48.26" y="11.43" smashed="yes" rot="R180">
-<attribute name="NAME" x="43.18" y="11.43" size="0.8128" layer="25" font="vector" rot="R180"/>
+<attribute name="NAME" x="43.18" y="12.065" size="0.8128" layer="25" font="vector" rot="R180"/>
 </element>
 <element name="C2" library="adafruit" package="E2-5" value="10uF" x="85.09" y="24.13" smashed="yes" rot="R180">
-<attribute name="NAME" x="87.2998" y="20.574" size="0.8128" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="87.9348" y="21.209" size="0.8128" layer="25" ratio="10" rot="R180"/>
 </element>
 <element name="R9" library="SparkFun-Passives" package="AXIAL-0.3" value="75" x="55.88" y="26.67" smashed="yes">
-<attribute name="NAME" x="57.15" y="24.1554" size="0.8128" layer="25"/>
+<attribute name="NAME" x="57.15" y="24.7904" size="0.8128" layer="25"/>
 </element>
 <element name="C4" library="adafruit" package="E2-5" value="47uF" x="64.77" y="24.13" smashed="yes">
 <attribute name="NAME" x="67.6402" y="21.336" size="0.8128" layer="25" rot="R180"/>
 </element>
 <element name="X2" library="adafruit" package="STX3100" value="TAPE IN / OUT" x="88.9" y="40.64" smashed="yes" rot="R270"/>
 <element name="C5" library="adafruit" package="E2-5" value="10uF" x="92.71" y="24.13" smashed="yes" rot="R180">
-<attribute name="NAME" x="94.9198" y="20.574" size="0.8128" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="95.5548" y="21.209" size="0.8128" layer="25" ratio="10" rot="R180"/>
 </element>
 <element name="R7" library="SparkFun-Passives" package="AXIAL-0.3" value="75" x="68.58" y="16.51" smashed="yes">
-<attribute name="NAME" x="69.85" y="13.97" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="69.85" y="14.605" size="0.8128" layer="25" font="vector"/>
 </element>
 <element name="C3" library="adafruit" package="E2-5" value="47uF" x="72.39" y="24.13" smashed="yes">
 <attribute name="NAME" x="74.93" y="21.336" size="0.8128" layer="25" ratio="10" rot="R180"/>
@@ -690,6 +696,13 @@ design rules under a new name.</description>
 <attribute name="MPN" value="TM 0508 A/4" x="63.5" y="43.18" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER" value="LUMBERG" x="63.5" y="43.18" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1200111" x="63.5" y="43.18" size="1.778" layer="27" display="off"/>
+</element>
+<element name="X1" library="adafruit" package="STX3100" value="STEREO OUT" x="100.965" y="13.335" smashed="yes" rot="R180"/>
+<element name="C6" library="adafruit" package="E2-5" value="10uF" x="85.09" y="8.89" smashed="yes">
+<attribute name="NAME" x="80.645" y="9.906" size="0.8128" layer="25" ratio="10"/>
+</element>
+<element name="C7" library="adafruit" package="E2-5" value="10uF" x="85.09" y="17.145" smashed="yes">
+<attribute name="NAME" x="80.645" y="17.526" size="0.8128" layer="25"/>
 </element>
 </elements>
 <signals>
@@ -754,6 +767,15 @@ design rules under a new name.</description>
 <wire x1="59.69" y1="34.68" x2="59.69" y2="39.37" width="1.016" layer="1"/>
 <wire x1="67.8" y1="34.68" x2="67.31" y2="34.68" width="1.016" layer="1"/>
 <wire x1="67.31" y1="34.68" x2="67.31" y2="39.37" width="1.016" layer="1"/>
+<contactref element="X1" pad="1"/>
+<wire x1="98.265" y1="13.435" x2="98.165" y2="13.335" width="0.8128" layer="1"/>
+<wire x1="98.165" y1="13.335" x2="96.52" y2="13.335" width="0.8128" layer="1"/>
+<wire x1="96.52" y1="13.335" x2="96.52" y2="4.445" width="0.8128" layer="1"/>
+<wire x1="96.52" y1="4.445" x2="83.185" y2="4.445" width="0.8128" layer="1"/>
+<wire x1="83.185" y1="4.445" x2="79.375" y2="8.89" width="0.8128" layer="1"/>
+<wire x1="79.375" y1="8.89" x2="79.375" y2="31.75" width="0.8128" layer="1"/>
+<wire x1="79.375" y1="31.75" x2="77.47" y2="33.655" width="0.8128" layer="1"/>
+<wire x1="77.47" y1="33.655" x2="77.47" y2="35.56" width="0.8128" layer="1"/>
 </signal>
 <signal name="VCC">
 <contactref element="JP2" pad="3"/>
@@ -836,6 +858,18 @@ design rules under a new name.</description>
 </signal>
 <signal name="DSB">
 <contactref element="JP3" pad="6"/>
+<contactref element="C7" pad="+"/>
+<wire x1="52.07" y1="38.1" x2="53.34" y2="36.83" width="0.6096" layer="16"/>
+<wire x1="53.34" y1="36.83" x2="53.34" y2="34.925" width="0.6096" layer="16"/>
+<wire x1="53.34" y1="34.925" x2="53.975" y2="34.29" width="0.6096" layer="16"/>
+<wire x1="53.975" y1="34.29" x2="55.245" y2="34.29" width="0.6096" layer="16"/>
+<wire x1="55.245" y1="34.29" x2="55.88" y2="33.655" width="0.6096" layer="16"/>
+<wire x1="55.88" y1="33.655" x2="55.88" y2="22.225" width="0.6096" layer="16"/>
+<wire x1="55.88" y1="22.225" x2="68.58" y2="22.225" width="0.6096" layer="16"/>
+<wire x1="68.58" y1="22.225" x2="68.58" y2="19.05" width="0.6096" layer="16"/>
+<wire x1="68.58" y1="19.05" x2="74.93" y2="19.05" width="0.6096" layer="16"/>
+<wire x1="74.93" y1="19.05" x2="74.93" y2="17.145" width="0.6096" layer="16"/>
+<wire x1="74.93" y1="17.145" x2="84.074" y2="17.145" width="0.6096" layer="16"/>
 </signal>
 <signal name="DSEN3">
 <contactref element="JP3" pad="5"/>
@@ -851,6 +885,16 @@ design rules under a new name.</description>
 </signal>
 <signal name="DSEN1">
 <contactref element="JP3" pad="1"/>
+<contactref element="C6" pad="+"/>
+<wire x1="39.37" y1="38.1" x2="39.37" y2="35.56" width="0.6096" layer="16"/>
+<wire x1="39.37" y1="35.56" x2="52.07" y2="35.56" width="0.6096" layer="16"/>
+<wire x1="52.07" y1="35.56" x2="52.07" y2="33.655" width="0.6096" layer="16"/>
+<wire x1="52.07" y1="33.655" x2="52.705" y2="33.02" width="0.6096" layer="16"/>
+<wire x1="52.705" y1="33.02" x2="54.61" y2="33.02" width="0.6096" layer="16"/>
+<wire x1="54.61" y1="33.02" x2="54.61" y2="20.955" width="0.6096" layer="16"/>
+<wire x1="54.61" y1="20.955" x2="67.31" y2="20.955" width="0.6096" layer="16"/>
+<wire x1="67.31" y1="20.955" x2="67.31" y2="8.89" width="0.6096" layer="16"/>
+<wire x1="67.31" y1="8.89" x2="84.074" y2="8.89" width="0.6096" layer="16"/>
 </signal>
 <signal name="A_IN">
 <contactref element="JP4" pad="2"/>
@@ -931,6 +975,18 @@ design rules under a new name.</description>
 <wire x1="62.23" y1="27.94" x2="66.04" y2="24.13" width="0.6096" layer="1"/>
 <wire x1="66.04" y1="24.13" x2="65.786" y2="24.13" width="0.6096" layer="1"/>
 </signal>
+<signal name="N$5">
+<contactref element="X1" pad="2"/>
+<contactref element="C6" pad="-"/>
+<wire x1="86.106" y1="8.89" x2="86.661" y2="8.335" width="0.6096" layer="1"/>
+<wire x1="86.661" y1="8.335" x2="93.265" y2="8.335" width="0.6096" layer="1"/>
+</signal>
+<signal name="N$10">
+<contactref element="X1" pad="5"/>
+<contactref element="C7" pad="-"/>
+<wire x1="86.106" y1="17.145" x2="87.496" y2="18.535" width="0.6096" layer="1"/>
+<wire x1="87.496" y1="18.535" x2="93.265" y2="18.535" width="0.6096" layer="1"/>
+</signal>
 </signals>
 <errors>
 <approved hash="4,1,1a24ff2ebf2c2f84"/>
@@ -958,8 +1014,9 @@ design rules under a new name.</description>
 <approved hash="4,1,894b675d54b57658"/>
 <approved hash="4,16,2ddada1b08996fae"/>
 <approved hash="3,1,94d54372bd0e6aa9"/>
-<approved hash="4,1,6dbee3a26e26ee33"/>
+<approved hash="3,1,a5b02a9a54eedbc4"/>
 <approved hash="4,1,6dbc33a0b624ee33"/>
+<approved hash="4,1,6dbee3a26e26ee33"/>
 <approved hash="4,1,945b16c83d272f48"/>
 <approved hash="4,1,15a677a3f238522d"/>
 <approved hash="4,1,a84552f50b14514f"/>
@@ -971,12 +1028,12 @@ design rules under a new name.</description>
 <approved hash="4,1,240f76ac6faef10a"/>
 <approved hash="4,1,4314cdabf4a3c606"/>
 <approved hash="4,1,1be06540d048a313"/>
-<approved hash="4,1,09b98ad8caaf722b"/>
 <approved hash="4,1,5c3d6cd5662a0ea9"/>
+<approved hash="4,1,09b98ad8caaf722b"/>
 <approved hash="4,1,5b3e01572cb5b22a"/>
 <approved hash="4,1,b43fd3688b86951e"/>
-<approved hash="4,1,a40d3a6566890c1e"/>
 <approved hash="4,1,4180e077c0192a87"/>
+<approved hash="4,1,a40d3a6566890c1e"/>
 <approved hash="4,1,b1c6660730239a0f"/>
 <approved hash="4,1,409101df24b1b401"/>
 <approved hash="4,1,f61941a7394e59f7"/>
@@ -984,10 +1041,10 @@ design rules under a new name.</description>
 <approved hash="4,1,e761f558acbd3272"/>
 <approved hash="4,1,40740e5326b9b464"/>
 <approved hash="4,1,737c1470dd987f47"/>
-<approved hash="4,1,23dee99763f8fd05"/>
 <approved hash="4,1,135ee95fecb03249"/>
-<approved hash="4,1,42051bdf54b04c95"/>
+<approved hash="4,1,23dee99763f8fd05"/>
 <approved hash="4,1,8f010db6dfd787f4"/>
+<approved hash="4,1,42051bdf54b04c95"/>
 <approved hash="4,1,7837ed9267f27d4d"/>
 <approved hash="4,1,2ddb57d4e94aa3a5"/>
 <approved hash="4,1,a6f9094e51fd97c8"/>
@@ -996,9 +1053,12 @@ design rules under a new name.</description>
 <approved hash="4,1,eaa761199da9199b"/>
 <approved hash="4,1,b7eb5b4faff94cd1"/>
 <approved hash="4,1,50702e1487c6d24e"/>
+<approved hash="4,1,7d8f0d8cf623102a"/>
+<approved hash="4,1,6f4c1f47e2f104f0"/>
+<approved hash="4,1,4c3b5e32562c5121"/>
+<approved hash="4,1,2ab9ba6546d0d214"/>
 <approved hash="4,1,34a0b6be4fa3c51d"/>
 <approved hash="4,1,22f2ae7c52e9dae7"/>
-<approved hash="4,1,2ab9ba6546d0d214"/>
 <approved hash="4,16,945b16c83d272f48"/>
 <approved hash="4,16,a84552f50b14514f"/>
 <approved hash="4,16,2f05178ff7a34d2c"/>
@@ -1012,8 +1072,10 @@ design rules under a new name.</description>
 <approved hash="4,16,b1c6660730239a0f"/>
 <approved hash="4,16,eaa761199da9199b"/>
 <approved hash="4,16,b7eb5b4faff94cd1"/>
-<approved hash="4,16,2ab9ba6546d0d214"/>
+<approved hash="4,16,6f4c1f47e2f104f0"/>
+<approved hash="4,16,7d8f0d8cf623102a"/>
 <approved hash="4,16,22f2ae7c52e9dae7"/>
+<approved hash="4,16,2ab9ba6546d0d214"/>
 <approved hash="4,16,34a0b6be4fa3c51d"/>
 </errors>
 </board>
