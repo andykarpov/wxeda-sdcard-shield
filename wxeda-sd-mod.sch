@@ -9355,7 +9355,10 @@ Audio, scart, microphone, headphone&lt;p&gt;
 <instance part="GND5" gate="1" x="73.66" y="170.18"/>
 <instance part="C2" gate="G$1" x="55.88" y="157.48" rot="R270"/>
 <instance part="GND7" gate="1" x="43.18" y="43.18"/>
-<instance part="T1" gate="G1" x="165.1" y="124.46"/>
+<instance part="T1" gate="G1" x="165.1" y="124.46" smashed="yes">
+<attribute name="NAME" x="160.02" y="119.38" size="1.778" layer="95"/>
+<attribute name="VALUE" x="157.48" y="116.84" size="1.778" layer="96"/>
+</instance>
 <instance part="R7" gate="G$1" x="149.86" y="124.46"/>
 <instance part="R8" gate="G$1" x="162.56" y="139.7"/>
 <instance part="R9" gate="G$1" x="175.26" y="116.84"/>
@@ -9677,7 +9680,7 @@ Audio, scart, microphone, headphone&lt;p&gt;
 <wire x1="198.12" y1="116.84" x2="198.12" y2="127" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="-"/>
 <wire x1="198.12" y1="127" x2="195.58" y2="127" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="127" x2="205.74" y2="127" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="127" x2="208.28" y2="127" width="0.1524" layer="91"/>
 <junction x="198.12" y="127"/>
 <label x="200.66" y="127" size="1.778" layer="95"/>
 </segment>
