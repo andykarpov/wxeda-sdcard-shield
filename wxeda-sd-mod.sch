@@ -9751,15 +9751,13 @@ Audio, scart, microphone, headphone&lt;p&gt;
 </sheet>
 </sheets>
 <errors>
-<approved hash="101,1,27.94,7.62,H1,MOUNT,,,,"/>
-<approved hash="101,1,99.06,7.62,H3,MOUNT,,,,"/>
+<approved hash="101,1,25.4,7.62,H1,P$1,,,,"/>
+<approved hash="101,1,96.52,7.62,H3,P$1,,,,"/>
 <approved hash="104,1,121.92,88.9,U1,VSS1,GND,,,"/>
 <approved hash="104,1,121.92,111.76,U1,VDD,VCC,,,"/>
 <approved hash="104,1,121.92,86.36,U1,VSS2,GND,,,"/>
 <approved hash="106,1,30.48,101.6,DSA,,,,,"/>
-<approved hash="106,1,30.48,111.76,DSB,,,,,"/>
 <approved hash="106,1,60.96,99.06,DSE,,,,,"/>
-<approved hash="106,1,30.48,99.06,DSEN1,,,,,"/>
 <approved hash="106,1,30.48,106.68,DSEN2,,,,,"/>
 <approved hash="106,1,30.48,109.22,DSEN3,,,,,"/>
 <approved hash="106,1,30.48,104.14,DSF,,,,,"/>
